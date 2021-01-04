@@ -3,7 +3,9 @@ package simplest.possible.implementation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static com.sun.tools.javac.util.List.of;
+//import static com.sun.tools.javac.util.List.of;
+import java.util.List;
+
 import static java.util.Collections.emptyList;
 
 public class PrimeFactorsTest {
@@ -14,6 +16,6 @@ public class PrimeFactorsTest {
 
     @Test
     void primeFactorOf2Is2Itself() {
-        Assertions.assertEquals(of(2), new PrimeFactors().of(2));
+        Assertions.assertEquals(List.of(2), new PrimeFactors().of(2));
     }
 }
